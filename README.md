@@ -22,6 +22,14 @@ I've presented a new interface called Person, which the professor and students u
 #Dependency
 The existence of Course and Complaint objects is required for methods like registerCourses() and submitComplaint(), which show how various classes work together to complete tasks.
 
+## How to Compile
+ 1) Open the terminal.
+ 2) CLone this repository.
+ 3) Compile the code by typing 
+        javac Main
+ 5) Run the system by typing
+        java Main
+
 The program is pretabulated with some data:
 
                                      Professor      Code    Credits  Semester
