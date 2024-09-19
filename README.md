@@ -1,26 +1,25 @@
 This is a simple ERP (Enterprise Resource Planning) system implemented in Java which makes use of OOPs core concepts, designed for managing students, professors, courses, and complaints at a university. The system allows users to log in based on their roles (Student, Professor, or Administrator) and perform various operations such as course registration, grade tracking, complaint submission, and academic progress review.
 
-##Core OOPs concepts are used such as:
+## Core OOPs concepts are used such as:
 #Encapsulation
 To protect data, I employ private fields like roll, courseList, and status. To ensure data control, these fields are only accessible through public methods such as setStatus() and getStatus().
 
-#Inheritance
+# Inheritance
 Student, Professor and Admin inherit from the User class, which provides shared attributes and behavior, like mail and password. This reuse permits each subclass, such as mainMenu(), to have specific functionality while avoiding redundancy.
 
-#Polymorphism
+# Polymorphism
 I modify the Professor's and Student's mainMenu() methods. This allows the same method to behave differently depending on the object that invokes it.
 
-#Abstraction
+# Abstraction
 The User class hides internal complexity such as login procedures by abstracting common features. Users' interactions are made simpler by the Complaint class, which isolates the complaints processing procedure.
 
-#Composition
+# Composition
 Course objects are contained in a student through completedCourses and courseList. This partnership guarantees effective administration by integrating academic tracking and course registration with the student.
 
-#Association and Interface
-I've presented a new interface called Person, which the professor and students use. This ensures flexibility for future user types while enabling shared behavior such as viewAvailableCourses().
-
-#Dependency
+# Dependency
 The existence of Course and Complaint objects is required for methods like registerCourses() and submitComplaint(), which show how various classes work together to complete tasks.
+
+Many other OOP concepts have been used as well.
 
 ## How to Compile
  1) Open the terminal.
@@ -53,7 +52,7 @@ To login as the Adminstrator, email and id are predefined on the assumption that
     admin email id : admin@iiitd.in
     admin password : admin123
 
-#Assumption
+## Assumptions:
 1. There exists only one admin.
 2. Admin can only assign courses to professor if they exist in the professor list.
 3. Professor can view enrolled student only for the courses they teach.
