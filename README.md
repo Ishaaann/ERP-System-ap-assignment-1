@@ -25,9 +25,9 @@ Many other OOP concepts have been used as well.
  1) Open the terminal.
  2) CLone this repository.
  3) Compile the code by typing 
-        javac Main
+        "javac Main"
  5) Run the system by typing
-        java Main
+        "java Main"
 
 The program is pretabulated with some data:
 
